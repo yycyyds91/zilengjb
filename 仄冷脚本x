@@ -8,29 +8,29 @@ LBLG.ZIndexBehavior=枚举.ZIndexBehavior.Sibling
 LBLG.Enabled=true
 LBL.Name="LBL"
 LBL.Parent=LBLG
-LBL.BackgroundColor3 = Color3.new(1, 1, 1)
+LBL.BackgroundColor3=Color3.new(1，1，1)
 LBL.BackgroundTransparency=1
 LBL.BorderColor3=Color3.new(0，0，0)
 LBL.位置=UDim2.new(0.75,0,0.010,0)
 LBL.Size=UDim2.new(0，133，0，30)
-LBL.Font=枚举.Font.GothamSemibold
+LBL.Font=枚举。字体.Gotham Semibold
 LBL.Text="TextLabel"
 LBL.TextColor3=Color3.new(1，1，1)
 LBL.TextScaled=true
 LBL.TextSize=14
 LBL.TextWrapped=true
-LBL.Visible = true
+LBL.Visible=true
 
 本地FpsLabel=LBL
-本地心跳=游戏：GetService("RunService").心跳
+本地心跳=游戏：GetService(“RunService”)。心跳
 本机LastIteration，开始
 本地FrameUpdateTable={}
 
-游戏：GetService("StarterGuui")：SetCore("SendNotification"，{title="仄冷脚本"；Text="载入中"；duration=2；})wait("3")
+游戏：GetService("StarterGuui")：SetCore("SendNotification"，{title="仄冷脚本"；文本="载入中"；持续时间=2；})等待("3")
 
-游戏：GetService("StarterGuui")：SetCore("SendNotification"，{title="仄冷脚本"；Text="仄冷nb"；Duration=2；})wait("2")
+游戏：GetService("StarterGuui")：SetCore("SendNotification"，{title="郁闷脚本"；文本="仄冷nb"；持续时间=2；})等待(“2”)
 
-游戏：GetService("StarterGuui")：SetCore("SendNotification"，{title="仄冷脚本"；Text="载入成功"；duration=3；})
+游戏：GetService("StarterGuui")：SetCore("SendNotification"，{title="仄冷脚本"；文本="载入成功"；持续时间=3；})
 
 本地函数HeartbeatUpdate()
 LastIteration=tick()
@@ -38,14 +38,14 @@ LastIteration=tick()
 FrameUpdateTable[Index+1]=(FrameUpdateTable[Index]>=LastIteration-1)和FrameUpdateTable[Index]或nil
 结束
 FrameUpdateTable[1]=LastIteration
-本地当前FPS=(tick()-开始>=1和#FrameUpdateTable)或(#FrameUpdateTable/(tick()-开始))
+本地当前FPS=(勾选()-开始>=1和#FrameUpdateTable)或(#FrameUpdateTable/(勾选()-开始))
 CurrentFPS=CurrentFPS-CurrentFPS%1
-FpsLabel.Text=("现在时间："..操作系统日期("%H").."时"..操作系统日期("%M").."分"..os.date("%S"))秒
-end
+FpsLabel.Text=("现在时间："..操作系统日期("%H").."时"..操作系统日期("%M").."分"..操作系统日期("%S"))
+结束
 start=tick()
-heartbeat：连接(HeartbeatUpdate)
+心跳：连接(HeartbeatUpdate)
 
-本地ui=loadstring(游戏：HttpGet("https://raw.githubusercontent.com/xcmsnd/DrRay-UI-Library/refs/heads/main/61%E7%A0%81.txt"))()；
+本地UI=loadstring(游戏：HttpGet("https://raw.githubusercontent.com/xcmsnd/DrRay-UI-Library/refs/heads/main/61%E7%A0%81.txt"))()；
 本地win=ui：新建("仄冷脚本")
 --
 本地UITab1=win:Tab("信息",'16060333448')
@@ -92,12 +92,12 @@ loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\
 end)
 
 关于：按钮("也是脚本但不知道名"，功能()
- loadstring(game:HttpGet("https://pastebin.com/raw/KwARpDxV",true))()
- end)
+loadstring(游戏：HttpGet("https://pastebin.com/raw/KwARpDxV"，true))()
+结束)
  
 关于：按钮("动感星期五"，功能()
- loadstring(game:HttpGet("https://pastebin.com/raw/KwARpDxV",true))()
- end)
+loadstring(游戏：HttpGet("https://pastebin.com/raw/KwARpDxV"，true))()
+结束)
  
 local UITab3=win:Tab("通用",'16060333448')
 
@@ -156,7 +156,7 @@ loadstring(游戏：HttpGet("https://raw.githubusercontent.com/dingding123hhh/hk
 end)
 
 关于：按钮("铁拳"，功能()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'))()
+游戏：GetService("StarterGuui")：SetCore("SendNotification"，{title="郁闷脚本"；文本="仄冷nb"；持续时间=2；})等待(“2”)
 end)
 
 关于：滑块('设置重力'，'slider flag'，196.2，196.2，1000，假，函数(值)
@@ -206,14 +206,14 @@ local UITab1=win:Tab("音乐",'7734068321')
 local about=UITab1:section("音乐"，正确)
 
 关于：按钮("防空警报"，功能()
-本地声音=Instance.new("Sound")
+本地声音=Instance.new(“声音”)
 sound.SoundId="rbxassetid://792323017"
 sound.Parent=game.Workspace
 声音：播放()
 结束)
     
 关于：按钮("义勇军进行曲"，功能()
-本地声音=Instance.new("Sound")
+本地声音=Instance.new(“声音”)
 sound.SoundId="rbxassetid://1845918434"
 sound.Parent=game.Workspace
 声音：播放()
@@ -231,21 +231,21 @@ end)
 loadstring(游戏：HttpGet("https://raw.githubusercontent.com/DXuwu/replicator-lol/main/dor.lua"))()
 end)
 
-关于：按钮("RP变怪"，功能()
+本地FrameUpdateTable={}
 loadstring(游戏：HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))()
-end)
+游戏：GetService("StarterGuui")：SetCore("SendNotification"，{title="仄冷脚本"；文本="载入中"；持续时间=2；})等待("3")
 
 关于：按钮("剪刀"，功能()
-loadstring(游戏：HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
-end)
+loadstring(游戏：HttpGet("https://pastebin.com/raw/KwARpDxV"，true))()
+游戏：GetService("StarterGuui")：SetCore("SendNotification"，{title="仄冷脚本"；文本="载入成功"；持续时间=3；})
 
 关于：按钮("十字架"，功能()
-loadstring(游戏：HttpGet("https://pastebin.com/raw/FCSyG6Th"))()
-end)
+loadstring(游戏：HttpGet("https://pastebin.com/raw/KwARpDxV"，true))()
+对于索引=#FrameUpdateTable，1，-1do
 
 关于：按钮("神圣炸弹"，功能()
 loadstring(游戏：HttpGet("https://pastebin.com/raw/u5B1UjGv"))()
-end)
+本地当前FPS=(勾选()-开始>=1和#FrameUpdateTable)或(#FrameUpdateTable/(勾选()-开始))
 
 local UITab3=win:Tab("忍者传奇",'16060333448')
 
@@ -253,83 +253,83 @@ local about=UITab3:section("忍者传奇"，正确)
 
 关于：按钮("忍者传奇1"，函数()
 loadstring(游戏：HttpGet('https://raw.githubusercontent.com/Zyb150933/zyb/main/123'))()
-end)
+本地win=ui：新建("仄冷脚本")
 
-关于：按钮("叶脚本"，功能()
+关于：按钮("忍者传奇1"，函数()
 loadstring(游戏：HttpGet("https://pastebin.com/raw/5TNsz9mj"))()
-end)
+local about=UITab1:section("作者信息"，false)
 
-关于：按钮("传送"，功能()
-loadstring(游戏：HttpGet("https://pastebin.com/raw/UzaUDSPK"))()
-end)
+关于：按钮("飞檐走壁"，功能()
+loadstring(游戏：HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+关于：标签("2514921423---qq")
 
-local UITab3=win:Tab("越狱",'16060333448')
+about:Button("透视1"，function()
 
 local about=UITab3:section("越狱"，正确)
 
-"越狱"，功能()
-载荷串(游戏：GetObjects("rbxassetid://3762448307")[1]。来源)()
+关于：按钮("电脑键盘"，功能()
+loadstring(游戏：HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt"，true))()
 end)
 
-local UITab3=win:Tab("极速传奇",'7734068321')
+关于：按钮("踏空行走"，功能()
 
 local about=UITab3:section("极速传奇"，正确)
 
-关于：按钮("1"，函数()
-loadstring(游戏：HttpGet("https://raw.githubusercontent.com/TtmScripter/GoodScript/main/LegendOfSpeed(Chinese)"))()
+关于：按钮("甩人"，功能()
+loadstring(游戏：HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
 end)
 
-关于：按钮("2"，函数()
-载荷串(游戏：HttpGet("https://raw.githubusercontent.com/TtmScripter/Legend-of-Speed-Auto-/main/GetPet"))()结束)
+关于：按钮("替身"，功能()
+loadstring(游戏：HttpGet(('https://raw.githubusercontent.com/SkrillexMe/SkrillexLoader/main/SkrillexLoadMain')))()
 
 local UITab19=win:Tab("'压力』",'7734068321')
 
-local about=UITab19:section("'压力'"，正确)
+loadstring(游戏：HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
 
 关于：按钮("压力1"，函数()
-loadstring(游戏：HttpGet("https://pastebin.com/raw/Ej3U4LbA"))()
-end)
+关于：按钮("汉化阿尔宙斯自瞄"，功能()
+loadstring(游戏：HttpGet("https://raw.githubusercontent.com/dingding123hhh/sgbs/main/%E4%B8%81%E4%B8%81%20%E6%B1%89%E5%8C%96%E8%87%AA%E7%9E%84.txt"))()
 
 about:Button("压力2"，function()
-loadstring(游戏：HttpGet(('https://github.com/DocYogurt/Main/raw/main/Scripts/Pressure')))()
-end)
+关于：按钮("工具挂"，功能()
+loadstring(游戏：HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
 
 本地UITab18=win：选项卡("'尘土飞扬的旅行』",'7734068321')
 
-local about=UITab18:section("‘尘土飞扬的旅行’"，正确)
+loadstring(游戏：HttpGet("https://raw.githubusercontent.com/dingding123hhh/hknvh/main/%E7%94%A9%E9%A3%9E.txt"))()
 
 about:Button("尘土飞扬的旅行1"，function()
-loadstring(游戏：HttpGet("https://raw.githubusercontent.com/AbdouGG/dustytripv1/main/beta"))()
-end)
+关于：按钮("铁拳"，功能()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'))()
 
 about:Button("尘土飞扬的旅行2"，function()
-loadstring(游戏：HttpGet("https://raw.githubusercontent.com/artemy133563/Utilities/main/ADustyTrip"，true))()
+关于：Slider('设置重力'，'Sliderflag'，196.2，196.2，1000，假，函数(值)
+game.Workspace.Gravity=Value
+
+local UITab3=win:Tab("通用",'16060333448')
+
+在task.wait()执行时生成(函数()游戏。玩家。本地玩家。性格。类人。JumpPower=跳跃末端)
+
+关于：按钮("iw指令"，功能()
+关于：按钮("飞",function()loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\9
 end)
 
-local UITab15=win:Tab("'死亡球』",'7734068321')
-
-local about=UITab15:section("'死亡球'"，正确)
-
-about:Button("死亡球1"，function()
-loadstring(游戏：HttpGet("https://github.com/Hosvile/InfiniX/releases/latest/download/main.lua"，true))()
-end)
-
-本地UITab14=win：选项卡("'汽车经销大亨』",'7734068321')
+在task.wait()执行时生成(函数()游戏。玩家。本地玩家。性格。仿人。行走速度=速度结束结束)
 
 local about=UITab14:section("‘汽车经销大亨’"，正确)
 
-关于：按钮("刷星星"，功能()
-loadstring(游戏：HttpGet("https://scriptblox.com/raw/LIMITED!-Car-Dealership-Tycoon-Moon-Team-16181"))()
-end)
+如果值，则
+loadstring(游戏：HttpGet('https://pastebin.com/raw/H3RLCWWZ'))()
+game.Lighting.Ambient=Color3.new(1，1，1)
 
-about:Button("汽车经销大亨1"，function()
-loadstring(游戏：HttpGet("https://raw.githubusercontent.com/IExpIoit/Script/main/Car%20Dealership%20Tycoon.lua"))()
-end)
+关于：按钮("飞檐走壁"，功能()
+loadstring(游戏：HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+game.Lighting.Ambient=Color3.new(0，0，0)
 
-local UITab12=win:Tab("'伐木大亨』",'7734068321')
+about:Button("透视1"，function()
 
 local about=UITab12:section("'伐木大亨'"，正确)
 
-关于：按钮("破解白脚本"，功能()
-getgenv().Crack='魔魂随手破解'pcall(函数()负载串(请求{URL='https://raw.githubusercontent.com/mohun-sciprt/normal/refs/heads/main/bc.lua',Method='GET'}.Body)()结束)
+如果说明，则("破解白脚本"，功能()
+autoInteract=true
 结束)
